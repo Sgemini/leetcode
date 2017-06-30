@@ -1,6 +1,6 @@
-var removeDuplicates = function(nums) {
+var removeElement = function(nums, val) {
     for(var i=0; i<nums.length; i++) {
-        if(nums[i] === nums[i+1]) {
+        if(nums[i] === val) {
             nums.splice(i, 1);
             i--;
         }
